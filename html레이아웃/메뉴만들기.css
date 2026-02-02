@@ -1,0 +1,15 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+
+#wrap{
+    width:1200px;  /*최대너비*/
+    position:relative;
+    margin:0 auto;    
+}
+
+#header{
+    padding:10px 20px;
+}
