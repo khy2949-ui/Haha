@@ -1,6 +1,6 @@
 *{
-    padding:0px;
-    margin:0px;
+    padding:0;
+    margin:0;
     box-sizing:border-box;
 }
 
@@ -12,4 +12,36 @@
 
 #header{
     padding:10px 20px;
+}
+#logoWrap{
+    height:50px;
+}
+
+#logoWrap img{ /* id가 logowrap인 태그 밑에 있는 img태그 선택*/
+    height:100%;    
+}
+
+/* 브라우저에 이미지 표현2 */
+
+#logoImg{
+    height:50px;
+    background: url("./다운로드.png") no-repeat;
+    width:100px;
+    background-size: cover;
+}
+
+.menulink{
+    font-size: 25px; /* 글자크기 */
+    color:black; /* 글자색상 */
+    text-decoration: none; /* 글자 효과 */
+    font-weight: 700; /* 글자 굵기 */
+    padding:3px 7px;
+    margin:0 20px;
+}
+
+#logowrap{
+    float:right;
+}
+#logoImg{
+    float:right;
 }
