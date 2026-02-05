@@ -7,6 +7,7 @@
 
 #wrap {
     width: 1200px;
+    height: auto;
     margin: 0 auto;
     position: relative;
 }
@@ -93,13 +94,16 @@
 #cafeMenu {
     /* height: 500px; */
     font-size: 20px;
+    margin: 20px;
+    padding: 20px;
 }
 
 #main{
     width: 1100px;
-    height: 50;
+    height: auto;
     float: left;
     padding: 7px 10px;
+
 }
 
 #footer {
@@ -119,5 +123,18 @@
     color: black;
 }
 
+.category{
+    display:inline-flex;
+    justify-content: left;
+    flex-direction: row;
+    padding: 10px 0px;
+    text-align: center;
+}
+#slash{
+    color: gray;
+}
 
-
+.subtitle{    
+    color: black;
+    text-align: center;
+}
