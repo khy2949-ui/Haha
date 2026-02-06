@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .inputField{
+            display:flex;
+            gap:15px;
+        }
+    </style>
+    <script>
+       function 클릭커(){
+            let name = document.getElementById("userName");
+            alert(name.value);
+            name.value="까마귀";
+            let obj = document.querySelector("#userName");
+            console.dir(obj);            
+       }
+
+       function 년도구하기(){
+            // 현재문서(document)에서 아이디가 age인 (Byid) 태그 (Element)를 가져와라 (get)
+            // -> document.getElementById("age")
+            let ageTag = document.getElementById("age");
+            let age = ageTag.value; // input에 입력값은 value에 있다.
+            alert(2026-age);
+       }
+       function 주소(){
+            let adress = document.getElementById("adress");  // input 태그 가져오기
+            // let obj(div) = document.getElementById("result1");
+            let obj = document.querySelector("#result1");  // div 태그 가져오기
+            obj.innerText = adress.value;  // input 태그에서 div태그로 옮기기
+        // innerHTML , innerText
+        // innerHTML = "<input>";
+        // innerText = "<input>";
+            div.innerText = "<input>";
+       }    
+    </script>
+</head>
+<body>
+    <!-- 문제 : 주소를 입력하여 div#result1에 출력하세요
+     힌트 : div 태그에는 value가 없어요. 대신 innerText에 넣으면돼요 -->
+     <div class="inputField">
+        <input type="text" name="adress" id="adress">
+        <button onclick="주소()">입력</button>
+
+     </div>
+     <div id="result1"></div>
+
+
+
+
+    <!-- 문제 : 나이를 입력하여 태어난 년도를 alert을 출력하세요 -->
+     <div class="inputField">
+        <input type="number" name="age" id="age">
+        <button onclick="년도구하기()">계산</button>
+
+     </div>
+
+    <div class="inputField">
+        <input type="text" name="userName" id="userName">
+        <button onclick="클릭커()">확인</button> <br>
+
+
+    </div>
+    
+    
+
+</body>
+</html>
